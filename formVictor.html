@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Formulario solicitud de seguro</title>
+      <link rel="stylesheet" href="./styles.css" />
+   </head>
+   <body>
+      <h1>Solicita tu seguros en Terricolas</h1>
+
+      <section class="formSection">
+         <div class="container">
+            <form action="solicitar_segugos.php" method="post">
+               <p>
+                  <label for="name">Nombres:</label>
+                  <input type="text" placeholder="Ingresa tu nombre" />
+               </p>
+               <p>
+                  <label for="Apellidos">Apellidos:</label>
+                  <input type="text" placeholder="Ingresa tus Apellidos" />
+               </p>
+               <p>
+                  <label for="Cedula">Cedula o Passaporte:</label>
+                  <input type="text" placeholder="Ingresa una identificacion" />
+               </p>
+               <p>
+                  <label for="Contraseña">Coloca una Contraseña:</label>
+                  <input type="password" name="password" id="pass" />
+               </p>
+
+               <p>
+                  <label for="tel">Numero Telefonico:</label>
+                  <input
+                     type="tel"
+                     name="tel"
+                     id="tel"
+                     placeholder="xxx-xxx-xxxx"
+                  />
+               </p>
+
+               <p>
+                  <label for="Email">Email:</label>
+                  <input
+                     type="email"
+                     name="email"
+                     id="email"
+                     placeholder="ejemplo@hotmail.com"
+                  />
+               </p>
+
+               <p>
+                  <label for="Seguros"
+                     >Elige el tipo de seguros que deseas obtener:</label
+                  >
+                  <select name="seguros" id="seguros">
+                     <option value="seguro de salud">Seguro de salud</option>
+                     <option value="seguro de vida">Seguro de vida</option>
+                     <option value="seguro de vehiculos">
+                        Seguro de vehiculo
+                     </option>
+                     <option value="seguro de vivienda">
+                        Seguro de vivienda o propiedad
+                     </option>
+                  </select>
+               </p>
+
+               <p>
+                  <label for="dinero"
+                     >Elige un Rango de precio que estarias dispuesto a
+                     pagar:</label
+                  ><input
+                     type="range"
+                     name="range"
+                     id="precio"
+                     min="120"
+                     max="1300"
+                     step="20"
+                     value="100"
+                  />
+               </p>
+               <p>
+                  <label for="fecha">Fecha de nacimiento :</label>
+                  <input type="date" />
+               </p>
+
+               <p>
+                  <label for="Enfermedad"
+                     >Posees algunas Enfermedad subyacente:</label
+                  >
+                  <input type="checkbox" name="Si" id="yes" />
+               </p>
+
+               <p>
+                  <label for="archivos">Foto de cedula o Passaporte:</label>
+                  <input type="file" name="id" id="identificacion" />
+               </p>
+
+               <p>
+                  <input type="submit" value="Enviar" />
+                  <input type="button" value="Limpiar" />
+               </p>
+            </form>
+         </div>
+      </section>
+   </body>
+</html>
