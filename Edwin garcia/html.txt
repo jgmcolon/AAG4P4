@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario de Registro de Clientes</title>
+  </head>
+  <body>
+    <h1>Formulario de Registro de Clientes</h1>
+    <form action="procesar_registro_cliente.php" method="POST">
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required />
+      </p>
+      <p>
+        <label for="direccion">Direcci&oacute;n:</label>
+        <input type="text" id="direccion" name="direccion" required />
+        <label for="telefono">Teléfono:</label>
+        <input
+          type="tel"
+          id="telefono"
+          name="telefono"
+          pattern="[0-9]{10}"
+          required
+        />
+      </p>
+      <input type="submit" value="Registrar Cliente" />
+    </form>
+    <h1>Formulario de Registro de Productos</h1>
+    <form method="GET" action="submit.php">
+      <fieldset>
+        <legend>Producto</legend>
+        <label for="nombre">Nombre:</label>
+        <br />
+        <input type="text" id="nombre" name="nombre" />
+        <br />
+        <label for="descripcion">Descripcion:</label>
+        <br />
+        <input type="text" id="descripcion" name="descripcion" />
+        <br />
+        <label for="precio">Precio:</label>
+        <br />
+        <input type="number" id="precio" name="precio" />
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
