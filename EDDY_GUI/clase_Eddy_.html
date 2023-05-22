@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FORMULARIO PACIENTES</title>
+</head>
+<body>
+            <div class="encabezado">
+                <div>
+                    <h1>FORMULARIO PARA REGRISTRO DE PACIENTE</h1>
+                
+                </div>
+
+                <div class="encabezado">
+                
+                    <img src="imagen/logomedico.jpg" alt="" width="60px">
+                </div>
+            </div>
+
+        <section class="form">
+            <div >
+                <form class="form2" action="" name="formularioderegistromedico" method="get">
+                    <label for="name">Nombres:</label>
+                    <input class="input" type="text" name="name" id="name"> <br><br>
+
+                    <label for="lastname">Apellidos:</label>
+                    <input class="input" type="text" name="lastname" id="lastname"> <br><br>
+
+                    <label for="ID">ID:</label>
+                    <input class="input" type="number" name="ID" id="ID"> <br><br>
+
+                    <label for="birthday">Fecha de Nacimiento:</label>
+                    <input class type="date" name="birthday" id="birthday"> <br><br>
+
+                    <label for="nacionality">Nacionalidad:</label>
+                    <input class="input" type="text" name="nacionality" id="nacionality"><br> <br> 
+
+                    <label for="sexo">Sexo:</label><br>
+                    <div class="radio">
+                        <input type="radio" name="sexo">Masculino <br>
+                        <input type="radio" name="sexo">Femenino <br> <br> 
+                     </div>
+                    <label for="address">Direccion:</label>
+                    <input class="input" type="text" name="address" id="address" width="200%"><br><br>
+
+                    <label for="movil">Telefonos de Contactos:</label>
+                    <input class="input" type="tel" name="movil" id="movil"><br><br>
+
+                    <label for="ocupation">Ocupacion:</label>
+                    <input class="input" type="text" name="ocupation" id="ocupation"><br> <br> 
+                    
+                    <label for="diagnostico">Diagnostico:</label>
+                    <textarea class="input" name="diagnostico" id="diagnostico" cols="30" rows="10"></textarea><br><br>
+
+                    <input type="submit" name="send" id="send">
+                </form>
+            </div>
+        </section>
+
+</body>
+</html>

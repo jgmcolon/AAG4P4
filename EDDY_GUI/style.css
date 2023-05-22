@@ -1,0 +1,25 @@
+.encabezado {
+    display: flex;
+}
+label{
+    display: inline-block;
+    width: 200px;
+    font-family: inherit;
+    
+  }
+.input {
+    border: none;
+    font-size: 14px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 5px;
+    width: 20%;
+    background-color: #a1d1f5;
+    color: #64696d;
+    margin-bottom: 5px;
+  }
+  
+  .radio{
+    margin-left: 200px;
+  }
