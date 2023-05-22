@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Nombre, Cedula, numero de telefono, institucion a la que pertenece, subir foto 4x4-->
+	<div class="contact_form">
+
+		<div class="formulario">			
+      <h1>Expediente academico</h1>
+				<h3>Ingresa tu información</h3>
+					<form action="/" method="post">				
+								<p>
+									<label for="nombre" class="colocar_nombre">Nombre
+								
+									</label>
+										<input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre completo">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+									
+									</label>
+										<input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+								</p>
+						
+								<p>
+									<label for="telefono" class="colocar_telefono">Teléfono
+									</label>
+										<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+								</p>		
+							
+								<p>
+									<label for="cedula" class="colocar_cedula">Cédula
+									</label>
+										<input type="text" name="introducir_cedula" id="cedula" placeholder="Ingresa tu cédula">
+								</p>		
+							
+								<p>
+									<label for="foto">Subir foto:</label>
+                  <input type="file" id="label_foto" name="foto">
+								</p>		
+							
+								<p>
+									<label for="instituciones" class="colocar_institucione">Selecciona tu institución:
+										
+									</label>
+
+                  <select id="colegios" name="lista">
+                    <option value="inst1">Institucion.1</option>
+                    <option value="inst2">Institucion.2</option>
+                    <option value="inst3">Institucion.3</option>
+                    <option value="inst4">Institucion.4</option>
+              
+                    </select>        		   								
+							
+								<button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>		
+						
+					</form>
+		</div>	
+	</div>
+
+</body>
+</html>
+
+</body>
+</html>
