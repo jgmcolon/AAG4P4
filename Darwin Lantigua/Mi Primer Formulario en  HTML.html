@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="primerFormulario.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Formulario para pedidos de pasteles</h1>
+        <img src="pastel.png" width="150" height="150">
+        <form action="/Pasteles.php" method="post">
+            <!--Datos de contacto-->
+            <h2>Datos de contacto</h2>
+
+            <div class="grid-container">
+                <label>Nombres y Apellidos:</label>
+                <input type="text">
+                <br>
+
+                <label>Celular: </label>
+                <input type="tel">
+                <br>
+
+                <label>Dirección:</label>
+                <input type="text">
+            </div>
+
+            <!--Tarjeta-->
+            <h2>Tarjeta de crédito o débito</h2>
+
+            <div class="grid-container">
+                <label>Número de tarjeta:</label>
+                <input type="text">
+                <br>
+
+                <label>Fecha de vencimiento:</label>
+                <input type="month">
+                <br>
+
+                <label>Código de seguridad (CVV):</label>
+                <input type="number">
+            </div>
+
+            <!--Pastel-->
+            <h2>Pastel</h2>
+
+            <div class="grid-container">
+                <label>Sabor de pastel:</label>
+                <input type="text">
+                <br>
+
+                <label>Relleno de pastel:</label>
+                <input type="text">
+                <br>
+
+                <label>Temática deseada:</label>
+                <input type="text">
+                <br>
+
+                <label>Información adicional:</label>
+                <textarea rows="5" cols="40"></textarea>
+            </div>
+
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
